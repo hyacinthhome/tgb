@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<!-- 1.下面这个设置了，网页调整为移动端宽度，进行缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Template</title>
+		<!-- 2.下面引入了CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/subject_init.css" />
+		<!-- 3.引入jquery -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- 4.引入bootstrap的js -->
+		<script src="js/bootstrap.min.js"></script>
+				<!-- 5.引入jquerySession的js -->
+		<script src="js/jquerySession.js"></script>
+		<script src="js/subject_init.js"></script>
+	</head>
+	<body>
+		<div class="main_body">
+			<div class="subject_table">
+				<div class="table_content">
+					<div class="table_title"><span class="h2">添加科目月初金额</span></div>
+					<table class="table table-striped table-bordered table-hover">
+						<tr align="center" valign="middle">
+							<td>科目</td>
+							<td>月初借方余额</td>
+							<td>月初贷方余额</td>
+						</tr>
+						<tr align="center" valign="middle">
+							<td> <select class="form-control" id="subject_option" name="account_name">
+									<option selected="selected" disabled="disabled" style='display: none' value=''></option>
+									<option value="1001库存现金">1001库存现金</option>
+									<option value="1002银行存款">1002银行存款</option>
+									<option value="1003应收账款">1003应收账款</option>									
+									<option value="1004原材料">1004原材料</option>
+									<option value="1005库存商品">1005库存商品</option>
+									<option value="2001短期借款">2001短期借款</option>
+									<option value="2002交易性金融负债">2002交易性金融负债</option>
+									<option value="2003应付票据">2003应付票据</option>									
+									<option value="2004应付账款">2004应付账款</option>
+									<option value="2005预付账款">2005预付账款</option>
+								</select>
+							</td>
+							<td><input type="text" class="form-control" id="sub_debitside_base" placeholder="" name="document_note"></td>
+							<td><input type="text" class="form-control" id="sub_creditside_base" placeholder="" name="document_note"></td>
+						</tr>
+					</table>
+				</div>
+				<div class="btn btn-success" id="sub_do_submit">提交</div>
+			</div>
+		</div>
+	</body>
+</html>

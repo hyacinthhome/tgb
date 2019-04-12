@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+	<!-- 1.下面这个设置了，网页调整为移动端宽度，进行缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Template</title>
+	<!-- 2.下面引入了CSS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <!-- 3.引入jquery -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <!-- 4.引入bootstrap的js -->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquerySession.js"></script>
+  </head>
+	<style type="text/css">
+		.main_body{
+			padding:100px;
+			width: 1450px;
+			height: 700px;
+		}
+		
+	</style>
+	<script type="text/javascript">
+		$(function(){
+					// alert($.session.get('user_username'));
+						$("#final").append($.session.get('user_username'));
+						// $("#final").append("sb");
+
+		})
+	</script>
+  <body>
+	  <div class="main_body">
+			<h1 id="final">当前登陆用户:</h1>
+			</br></br></br>
+			<h2> 前端:jQuery bootstrap ajax</h1>
+			<h2> 后端:struts hibernate
+			<h2> 小组成员：戴溯豪 曾淳 高炜晨</h1>
+	  </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<!-- 1.下面这个设置了，网页调整为移动端宽度，进行缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Template</title>
+		<!-- 2.下面引入了CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/subject_page.css" />		
+		<!-- 3.引入jquery -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- 4.引入bootstrap的js -->
+		<script src="js/bootstrap.min.js"></script>
+				<!-- 5.引入jquerySession的js -->
+		<script src="js/jquerySession.js"></script>
+		<script src="js/subject_page.js"></script>
+	</head>
+	<!-- 科目代码、年月、月初余额、本月借方金额、本月贷方金额、期末余额； -->
+	<body>
+		<div class="main_body">
+			<div class="table_content">
+				<div class="table_title"><span class="h2">科目余额</span></div>
+				<table class="table table-striped table-bordered table-hover" id="addAccount">
+					<tr align="center" valign="middle">
+						<td rowspan="2">科目代码</td>
+						<td rowspan="2">时间</td>
+						<td colspan="2">月初余额</td>
+						<td colspan="2">本期发生额</td>
+						<td colspan="2">期末余额</td>
+					</tr>
+					<tr>
+						<td>借方</td>
+						<td>贷方</td>
+						<td>借方</td>
+						<td>贷方</td>
+						<td>借方</td>
+						<td>贷方</td>
+					</tr>
+				</table>
+			</div>
+
+		</div>
+	</body>
+</html>

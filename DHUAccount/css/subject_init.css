@@ -1,0 +1,46 @@
+		.main_body {
+			padding: 40px;
+			width: 1450px;
+			height: 700px;
+		}
+
+		.subject_table {
+			margin: 100px 30 0 30px;
+		}
+
+		.table>tbody>tr>td,
+		.table>tbody>tr>th,
+		.table>tfoot>tr>td,
+		.table>tfoot>tr>th,
+		.table>thead>tr>td,
+		.table>thead>tr>th {
+			padding: 0;
+			line-height: 1.42857143;
+			vertical-align: middle;
+			text-align: center;
+			border-top: 1px solid #ddd;
+			height: 72px;
+			width: 327px;
+		}
+
+		.table_title {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+
+		.form-control {
+			height: 100%;
+		}
+
+		.btn {
+			width: 180px;
+			height: 40px;
+			position: relative;
+			left: 1150px;
+			text-align: center;
+			vertical-align: middle;
+		}
+
+		#receive_modal {
+			display: none;
+		}

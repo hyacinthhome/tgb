@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<!-- 1.下面这个设置了，网页调整为移动端宽度，进行缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Template</title>
+		<!-- 2.下面引入了CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/foreground.css" />		
+		<!-- 3.引入jquery -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- 4.引入bootstrap的js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- 5.引入jquerySession的js -->
+		<script src="js/jquerySession.js"></script>
+		<!-- 6.引入Echarts-->
+		<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+		<script src="js/foreground.js"></script>
+	</head>
+	<body>
+		<!-- 侧边栏 -->
+		<div class="sidebar_menu">
+			<div class="sidebar">
+				<div class="sidebar_log"><img src="img/mainlogo_black.png"></div>
+				<div class="sidebar-list">
+
+					<!-- 凭证管理侧栏菜单和子框 -->
+					<div id="list_vocher">
+						<div class="list-item"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;凭证</div>
+						<div id="slider_vocher">
+							<div class="sub_content">
+								<div id="go_vocher_record">查凭证</div>
+								<div id="go_vocher_do">录凭证</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 科目管理侧栏菜单和子框 -->
+					<div id="list_receive">
+						<div class="list-item"><span class="glyphicon glyphicon-yen"></span>&nbsp;应收</div>
+						<div id="slider_receive">
+							<div class="sub_content">
+								<div id="go_receive_record">查应收</div>
+								<div id="go_vocher_do2">录应收</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 科目管理侧栏菜单和子框 -->
+					<div id="list_subject">
+						<div class="list-item"><span class="glyphicon glyphicon-indent-right"></span>&nbsp;科目</div>
+						<div id="slider_subject">
+							<div class="sub_content">
+								<div id="go_subject">科目余额</div>
+								<div id="go_set_subject">设置科目</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- 个人中心侧栏菜单和子框 -->
+					<div id="list_personal">
+						<div class="list-item"><span class="glyphicon glyphicon-sunglasses"></span>&nbsp;个人</div>
+						<div id="slider_personal">
+							<div class="sub_content">
+								<div class="go_set_personcenter">个人中心</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--侧边栏到此结束-->
+
+		<!-- 上侧导航栏 -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- dhulogo -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#"><img src="img/dhu.jpg"></a>
+				</div>
+
+				<!-- personal栏和search栏 -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!-- 动态时间 -->
+					<div><font id="mytime" style="color: #5CB85C;"></font></div>
+					<div class="nav_personal">
+						<ul class="nav navbar-nav">
+							<li><a class="go_set_personcenter">帮助 <span class="sr-only">(current)</span></a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="un">
+									<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a class="go_set_personcenter">个人中心</a></li>
+									<li><a class="go_set_personcenter">设置</a></li>
+									<li role="separator" class="divider" ></li>
+									<li><a class="go_set_personcenter">帮助</a></li>
+									<li role="separator" class="divider"></li>
+									<li><a class="go_set_personcenter">关于东华会计通</a></li>
+								</ul>
+							</li>
+							<li><a href="index.html">返回</a></li>
+						</ul>
+					</div>
+
+					<!-- 搜索栏 -->
+					<div class="nav_search">
+						<form class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="金额/科目/摘要">
+							</div>
+							<button type="submit" class="btn btn-success">搜索</button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		</nav><!--到此导航栏结束-->
+
+		<div class="workspace">
+			<div class="page_index">
+			<ul class="list-inline nav nav-tabs">
+				<!-- data-toggle="tab"默认了a标签不会跳到其他页面 -->
+				<li><a href="#menu_page" data-toggle="tab">首页</a></li>
+				<li><a href="#vocher_record_page" data-toggle="tab"  id="side_vocher_record">查凭证</a></li>
+				<li><a href="#vocher_do_page" data-toggle="tab" id="side_vocher_do">录凭证</a></li>
+				<li><a href="#receive_record_page" data-toggle="tab" id="side_receive_record">查应收</a></li>
+				<li><a href="#sub_set_page" data-toggle="tab" id="side_subject_init">科目设置</a></li>
+				<li><a href="#page_record_page" data-toggle="tab" id="side_subject">科目余额</a></li>
+				<li><a href="#sub_personcenter_page" data-toggle="tab" id="side_personcenter">个人中心</a></li>
+				<!-- <li><a href="#help_page" data-toggle="tab" id="side_help">演示流程</a></li> -->
+			</ul>
+			</div>
+			<div class="page_space">
+				<div class="tab-content">
+					<div class="tab-pane active" id="menu_page">
+						<div id="data-show" style="height:600px;width:700px">
+						</div>
+						<div id="data-show2" style="height:600px;width:700px">
+						</div>
+					</div>
+					<div class="tab-pane" id="vocher_do_page">
+						<iframe src="vocher_do_page.html" height="700px" width="1500px" scrolling="no" frameborder="0"></iframe>
+					</div>
+					<div class="tab-pane" id="vocher_record_page">
+						<iframe src="vocher_record_page.html" height="700px" width="1450px" scrolling="no" frameborder="0"></iframe>
+					</div>
+					<div class="tab-pane" id="receive_record_page">
+						<iframe src="receive_record_page.html" height="700px" width="1450px" scrolling="no" frameborder="0"></iframe>
+					</div>
+					<div class="tab-pane" id="page_record_page">
+						<iframe src="subject_page.html" height="700px" width="1450px" scrolling="no" frameborder="0"></iframe>
+					</div>
+					<div class="tab-pane" id="sub_set_page">
+						<iframe src="subject_init.html" height="700px" width="1450px" scrolling="no" frameborder="0"></iframe>
+					</div>
+					<div class="tab-pane" id="sub_personcenter_page">
+						<iframe src="personcenter.html" height="700px" width="1450px" scrolling="no" frameborder="0"></iframe>
+					</div>
+<!-- 					<div class="tab-pane" id="help_page">
+						<iframe src="help.html" height="700px" width="1450px" scrolling="no" frameborder="0"></iframe>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

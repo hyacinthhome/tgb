@@ -1,0 +1,58 @@
+		body {
+							overflow: scroll;
+							overflow-x: hidden;
+							overflow-y: hidden;
+				background-image: url(../img/pink_rice.png);
+			}
+
+			.container {
+				border-radius: 1% 1% 2% 2%;
+				margin: 8% auto;
+				padding: 0;
+				background-color: white;
+				width: 25%;
+			}
+
+			.tab-content {
+				padding: 0 10% 10% 10%;
+			}
+
+			#logo_img {
+				display: block;
+				margin: 5% auto 0;
+				width: 70%;
+				height: 90%;
+			}
+
+			form h2 {
+				margin: 3% 0 4%;
+			}
+
+			#login_context {
+				text-align: center;
+				color: #B5211F;
+			}
+
+			#login_inputText {
+				margin-bottom: 4%;
+			}
+			
+			#register_inputText {
+				margin-bottom: 4%;
+			}
+
+			#login_inputPassword {
+				margin-bottom: 4%;
+			}
+			
+			#register_inputPassword {
+				margin-bottom: 4%;
+			}
+
+			#waring_span {
+				text-align: center;
+			}
+
+			#hr_class {
+				margin: 0;
+			}

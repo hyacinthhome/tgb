@@ -1,0 +1,77 @@
+<!DOCTYPE html>                                           
+		<meta charset="utf-8">
+		<!-- 1.下面这个设置了，网页调整为移动端宽度，进行缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Template</title>
+		<!-- 2.下面引入了CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!-- 3.引入jquery -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- 4.引入bootstrap的js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- 5.引入jquerySession的js -->
+		<script src="js/jquerySession.js"></script>
+		<script src="js/index.js"></script>
+</script>
+</head>
+<body topmargin=0 leftmargin=0>
+		<div class="container">
+			<!--这一部分参考了知乎来设计-->
+			<ul class="nav nav-tabs nav-justified">
+				<!-- 登陆注册导航 -->
+				<li role="presentation" class="active" id="set_nav_login"><a href="#login_request" data-toggle="tab">登陆</a></li>
+				<li role="presentation" id="set_nav_register"><a href="#register_request" data-toggle="tab">注册</a></li>
+			</ul>
+			<div class="tab-content">
+				<!-- 面板控制 -->
+				<div class="tab-pane active" id="login_request">
+					<img src="img/mainlogo.jpg" id="logo_img">
+					<span id="login_context">
+						<h4><em>东华会计通，更方便的线上电子财务系统</em></h4>
+					</span>
+					<hr id="hr_class" />
+					<form id="login_form" class="form-signin" method="get">
+						<h2><small>请登陆</small></h2> <!-- small标签嵌套在h中，本应做副标题，但比h更好看 -->
+						<label for="inputUsername" class="sr-only">用户名</label>
+						<input type="text" id="login_inputText" name="user_username" class="form-control" placeholder="用户名">
+						<label for="inputPassword" class="sr-only">Password</label>
+						<input type="password" id="login_inputPassword" name="user_password" class="form-control" placeholder="密码">
+					</form>
+					<button id="form_button_login" class="btn btn-lg btn-primary btn-block btn-danger">登陆</button>
+					<!-- 注意，提交按钮若放在form中会被json化 -->
+					<hr />
+					<div>
+						<span id="waring_span">
+							<h4>没有账号？请先<a id="a_register">注册</a></h4>
+						</span>
+					</div>
+				</div>
+				<div class="tab-pane" id="register_request">
+					<img src="img/mainlogo.jpg" id="logo_img">
+					<span id="login_context">
+						<h4><em>东华会计通，更方便的线上电子财务系统</em></h4>
+					</span>
+					<hr id="hr_class" />
+					<div>
+						<form id="register_form" class="form-signin" method="get">
+							<h2><small>请注册</small></h2>
+							<label for="inputUsername" class="sr-only">用户名</label>
+							<input type="text" id="register_inputText" name="user_username" class="form-control" placeholder="用户名">
+							<label for="inputPassword" class="sr-only">输入密码</label>
+							<input type="password" id="register_inputPassword" name="user_password" class="form-control" placeholder="密码">
+<!-- 							<label for="inputPassword" class="sr-only">请再次输入密码</label> -->
+<!-- 							<input type="password" id="register_inputPassword" name="user_password" class="form-control" placeholder="请再次输入密码"> -->
+						</form>
+						<button id="form_button_register" class="btn btn-lg btn-primary btn-block btn-danger">注册</button>
+						<!-- 注意，提交按钮若放在form中会被json化 -->
+						<hr />
+						<span id="waring_span">
+							<h4>注册成功后，下次请直接<a id="a_login">登陆</a></h4>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

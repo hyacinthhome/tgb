@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<!-- 1.下面这个设置了，网页调整为移动端宽度，进行缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Template</title>
+		<!-- 2.下面引入了CSS -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/vocher_do_page.css" />
+		<!-- 3.引入jquery -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<!-- 4.引入bootstrap的js -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- 5.引入jquerySession的js -->
+		<script src="js/jquerySession.js"></script>
+		<script src="js/vocher_do_page.js"></script>
+	</head>
+	<body>
+		<div class="main_body">
+			<div class="vocher_table">
+				<div class="table_title"><span class="h2">记账凭证</span></div>
+				<form id="vocher_form">
+					<table class="table table-bordered">
+						<tr>
+							<td><span class="h4">摘录</span></td>
+							<td><span class="h4">会计科目</span></td>
+							<td><span class="h4">借方金额</span></td>
+							<td><span class="h4">贷方金额</span></td>
+						</tr>
+						<tr>
+							<td><input type="text" class="form-control" id="document_note1" placeholder="" name="document_note1"></td>
+							<td> <select class="form-control" id="subject_option1" name="account_name1">
+									<option selected="selected" disabled="disabled" style='display: none' value=''></option>
+									<option value="1001库存现金">1001库存现金</option>
+									<option value="1002银行存款">1002银行存款</option>
+									<option value="1003应收账款">1003应收账款</option>									
+									<option value="1004原材料">1004原材料</option>
+									<option value="1005库存商品">1005库存商品</option>
+									<option value="2001短期借款">2001短期借款</option>
+									<option value="2002交易性金融负债">2002交易性金融负债</option>
+									<option value="2003应付票据">2003应付票据</option>									
+									<option value="2004应付账款">2004应付账款</option>
+									<option value="2005预付账款">2005预付账款</option>
+								</select>
+							</td>
+							<td><input type="text" class="form-control" id="positive_money1" placeholder="" name="positive_money"></td>
+							<td><input type="text" class="form-control" id="negative_money1" placeholder="" name="negative_money"></td>
+						</tr>
+						<tr>
+							<td><input type="text" class="form-control" id="document_note2" placeholder="" name="document_note2"></td>
+							<td> <select class="form-control" id="subject_option2" name="account_name2">
+									<option selected="selected" disabled="disabled" style='display: none' value=''></option>
+									<option value="1001库存现金">1001库存现金</option>
+									<option value="1002银行存款">1002银行存款</option>
+									<option value="1003应收账款">1003应收账款</option>									
+									<option value="1004原材料">1004原材料</option>
+									<option value="1005库存商品">1005库存商品</option>
+									<option value="2001短期借款">2001短期借款</option>
+									<option value="2002交易性金融负债">2002交易性金融负债</option>
+									<option value="2003应付票据">2003应付票据</option>									
+									<option value="2004应付账款">2004应付账款</option>
+									<option value="2005预付账款">2005预付账款</option>
+								</select>
+							</td>
+							<td><input type="text" class="form-control" id="positive_money2" placeholder="" name="positive_money"></td>
+							<td><input type="text" class="form-control" id="negative_money2" placeholder="" name="negative_money"></td>
+						</tr>
+						<tr>
+							<td><input type="text" class="form-control" id="document_note3" placeholder="" name="document_note3"></td>
+							<td> <select class="form-control" id="subject_option3" name="account_name3">
+									<option selected="selected" disabled="disabled" style='display: none' value=''></option>
+									<option value="1001库存现金">1001库存现金</option>
+									<option value="1002银行存款">1002银行存款</option>
+									<option value="1003应收账款">1003应收账款</option>									
+									<option value="1004原材料">1004原材料</option>
+									<option value="1005库存商品">1005库存商品</option>
+									<option value="2001短期借款">2001短期借款</option>
+									<option value="2002交易性金融负债">2002交易性金融负债</option>
+									<option value="2003应付票据">2003应付票据</option>									
+									<option value="2004应付账款">2004应付账款</option>
+									<option value="2005预付账款">2005预付账款</option>
+								</select>
+							</td>
+							<td><input type="text" class="form-control" id="positive_money3" placeholder="" name="positive_money"></td>
+							<td><input type="text" class="form-control" id="negative_money3" placeholder="" name="negative_money"></td>
+						</tr>
+						<tr>
+							<td><input type="text" class="form-control" id="document_note4" placeholder="" name="document_note4"></td>
+							<td> <select class="form-control" id="subject_option4" name="account_name4">
+									<option selected="selected" disabled="disabled" style='display: none' value=''></option>
+									<option value="1001库存现金">1001库存现金</option>
+									<option value="1002银行存款">1002银行存款</option>
+									<option value="1003应收账款">1003应收账款</option>									
+									<option value="1004原材料">1004原材料</option>
+									<option value="1005库存商品">1005库存商品</option>
+									<option value="2001短期借款">2001短期借款</option>
+									<option value="2002交易性金融负债">2002交易性金融负债</option>
+									<option value="2003应付票据">2003应付票据</option>									
+									<option value="2004应付账款">2004应付账款</option>
+									<option value="2005预付账款">2005预付账款</option>									
+								</select>
+							</td>
+							<td><input type="text" class="form-control" id="positive_money4" placeholder="" name="positive_money"></td>
+							<td><input type="text" class="form-control" id="negative_money4" placeholder="" name="negative_money"></td>
+						</tr>
+						<tr>
+							<td colspan="2">合计</td>
+							<td id="text1"></td>
+							<td id="text2"></td>
+						</tr>
+					</table>
+				</form>
+				<div class="btn btn-success" id="vocher_do_submit">提交</div>
+			</div>
+
+			<button id="receive_modal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">开始演示模态框</button>
+			<!-- modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h4 class="modal-title" id="myModalLabel">请输入应收账款的客户信息，便于应收账款的管理</h4>
+						</div>
+						<div class="modal-body">
+							<form action="" class="form-signin" method="">
+								<h4>选择已存在的客户</h4>
+								<select class="form-control" id="customer_list">
+									<option selected="selected" disabled="disabled" style='display: none' value=''></option>
+									<!-- 这里需要访问数据库获得用户已录取的欠款客户 -->
+									<!-- 并且添加一个函数，让下面的input框的value设置为那个客户的信息 -->
+<!-- 									<option value="马云">马云</option>
+									<option value="马化腾">马化腾</option> -->
+								</select>
+								<!-- <label for="inputUsername" class="sr-only">客户名</label> -->
+								<h4>客户名</h4>
+								<input type="text" id="customerinfo_name_inputText" name="customerinfo_name" class="form-control" placeholder="客户名">
+								<!-- <label for="inputUsername" class="sr-only">客户公司</label> -->
+								<h4>客户公司名</h4>
+								<input type="text" id="customerinfo_company_inputText" name="customerinfo_company" class="form-control"
+								 placeholder="客户公司名">
+								<!-- <label for="inputUsername" class="sr-only">客户电话</label> -->
+								<h4>客户电话</h4>
+								<input type="text" id="customerinfo_phone_inputText" name="customerinfo_phone" class="form-control" placeholder="客户电话">
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button class="btn-primary" id="customer_modal_submit">新增</button>
+							<button class="btn-primary" id="receive_modal_submit">确认</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
